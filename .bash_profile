@@ -49,3 +49,17 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Added by `rbenv init` on Tue Jul 23 11:44:27 PDT 2024
+eval "$(rbenv init - --no-rehash bash)"
+
+function issue_link() {
+	local domain=$1
+  local issue=$2
+
+  local link=https://github.com/github/$domain/issues/$issue
+	echo $link | pbcopy
+	echo $link copied to clipboard
+}
