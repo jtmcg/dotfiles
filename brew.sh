@@ -35,9 +35,6 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install GnuPG to enable PGP-signing commits.
-brew install gnupg
-
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
@@ -67,7 +64,6 @@ brew install john
 brew install knock
 brew install netpbm
 brew install nmap
-brew install pngcheck
 brew install socat
 brew install sqlmap
 brew install tcpflow
@@ -79,7 +75,7 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
+brew install gh
 brew install git
 brew install git-lfs
 brew install gs
